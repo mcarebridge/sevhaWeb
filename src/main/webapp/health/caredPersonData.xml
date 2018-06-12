@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaredPerson>
+	<ID>#cpid#</ID>
+	<Name>#cpname#</Name>
+	<RxPrescribed>
+		<ID>#rxid#</ID>
+		<RxTag>#rxtag#</RxTag>
+		<Physician>
+			<ID>#phyid#</ID>
+			<Name>#phyname#</Name>
+		</Physician>
+		<CareGiver>
+			<ID>#cgid#</ID>
+			<Name>#cgname#</Name>
+		</CareGiver>
+		<RxLines>
+			<ID>#rxlineid#</ID>
+			<Rx>#rx#</Rx>
+			<Dosage>#rxdosage#</Dosage>
+			<Route>#rxroute#</Route>
+			<ScheduleByHours>#rxschdl#</ScheduleByHours>
+		</RxLines>
+	</RxPrescribed>
+	<PreExistingCondition>
+		<ID>#pre_ext_condid#</ID>
+		<Condition>
+			<Name>#condname#</Name>
+			<Symptoms>
+				<ID>#symid#</ID>
+				<Tag>#symtag#</Tag>
+			</Symptoms>			
+		</Condition>
+	</PreExistingCondition>
+	<EmergencyResponse>
+		<Provider>
+			<ID>#emgprovid#</ID>
+			<Name>#emgprovname#</Name>
+			<Contact>#emgcntnm#</Contact>
+			<Cell>#emgcntcell#</Cell>
+			<Fixed>#emgfixed#</Fixed>
+			<!-- to be taken out -->
+			<ContactPerson>#emgcntperson#</ContactPerson>
+		</Provider>
+	</EmergencyResponse>
+</CaredPerson>

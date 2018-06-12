@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="css/mobile.css" media="(max-width:1040px)" rel="stylesheet"
+		type="text/css">
+		<link href="css/desktop.css" media="(min-width:1041px)"
+			rel="stylesheet" type="text/css">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				<meta name="Keywords" content="">
+					<meta name="Description" content="">
+						<title>Welcome to mCareBridge</title>
+						<link href='https://fonts.googleapis.com/css?family=Nova+Round'
+							rel='stylesheet' type='text/css'>
+							<script src="scripts/jquery.min.js"></script>
+							<script language=javascript type='text/javascript'>
+								var uagent = navigator.userAgent.toLowerCase();
+								//alert("Dimensions of document: " + $(document).width()
+								//		+ "x" + $(document).height());
+								//alert("Dimensions of window: " + $(window).width()
+								//+"x" + $(window).height());
+								//alert(uagent);
+							</script>
+							<!--  oAuth JS -->
+							<script type="text/javascript">
+								(function() {
+									var po = document.createElement('script');
+									po.type = 'text/javascript';
+									po.async = true;
+									po.src = 'https://plus.google.com/js/client:plusone.js';
+									var s = document
+											.getElementsByTagName('script')[0];
+									s.parentNode.insertBefore(po, s);
+								})();
+							</script>
+							<!-- JavaScript specific to this application that is not related to API
+     calls -->
+							<script
+								src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+<body>
+	<form name='auth' action='authenticate' methoud='POST'>
+		<input name='actionParam' type='hidden' value='AUTH' />
+		<div z-index="_001" class="loginBox">
+			<div class='logo'>
+				<span>mCareBridge</span>
+			</div>
+			<div class="loginBoxInternal">
+				<div>
+					<h3>Error</h3>
+				</div>
+				
+				<div style='text-align:center'>
+					<label>Opps something went wrong ! For security reasons we need to restart your session.</label> <label><br><a
+						href='/'>Please click here to log again</a></label>
+				</div>
+			</div>
+		</div>
+
+	</form>
+</body>
+<div id="footer">
+	<div
+		style="position: relative; top: 30%; left: 15%; right: 15%; width: 70%; text-align: center;">visit
+		us at www.mcarebridge.com</div>
+</div>
+</body>
+</html>

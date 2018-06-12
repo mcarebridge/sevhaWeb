@@ -1,0 +1,12 @@
+Id,preExistingDiseaseId,symptom,weightage
+1000,1000,Joint Pain,1
+1001,1000,Body Ache,1
+1002,1000,Diziness,3
+1003,100,Fatigue,2
+1004,100,Headache,1
+1005,100,Black Out,7
+1006,100,Dizziness,3
+1007,100,Sweating,5
+1008,100,Fever,2
+1009,100,Vomiting,3
+1010,100,Blurred Vision,5

@@ -1,0 +1,13 @@
+Id,diseaseCode,diseaseName
+100,DFLT,Default
+1000,ARTH,Arthritis
+1010,ASTH,Asthma
+1020,CIRR,Cirrhosis
+1030,T2DI,Type2 Diabetes
+1040,HEDI,Heart Disease
+1050,CHRE,Chronic renal failure
+1060,STRK,Stroke
+1070,DEPR,Depression
+1080,OBES,Obesity
+1090,HYTE,Hypertension
+1100,CANR,Cancer

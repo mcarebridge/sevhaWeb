@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type"  content="text/html charset=UTF-8" />
+		<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+      		<style>
+         		body {
+         			background-color:#FFFFFF;
+         			font-family:Arial;
+         			}
+         		h1 {
+
+         		   }
+
+         		.careResultsTbl {
+					left: 5%;
+					width: 100%;
+					background: #FFFFFF;
+				}
+      		</style>
+	</head>
+	<body>
+		<div>
+			<div style="font-family: 'Prata', serif; font-size: 2.0em;color: #FFFFFF;background-color: #8F7C2F;">
+			   <span style="margin-left:2%;">sevh&#257;</span>
+		    </div>
+			<div id="contents">
+				<div style="margin-left:15%;">
+					<h3>
+						Welcome to sevh&#257;
+					</h3>
+				</div>
+				<div style="font-size: 0.90em; disply:block; width:65%; margin-left:15%">
+				Hi $emailContentsObject.firstName,
+				<br>
+				<br>
+				We Welcome you to sevh&#257;. We have successfully created your account to use sevh&#257; services.
+				<br>
+				<br>
+				You registered email-id is your registered user-id. Please click <a
+					href="https://$emailContentsObject.launchServer/health/register?actionParam=APPLN">here</a> to log on to sevh&#257;
+				<br>
+				<br>
+				Or copy this URL in the browser window https://$emailContentsObject.launchServer/health/register?actionParam=APPLN
+				<br>
+				<br>
+				If you have any questions then please feel free to write to us at wellness@sevha.com
+				<br>
+				<br>
+				Regards,
+				<br>
+				<br>
+				<br>
+				Customer Support
+				<br>
+				</div>
+
+			</body>
+	</html>

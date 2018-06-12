@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /health/adminData
+Disallow: /ktrwjr
+Disallow:/caredPersonData.xml
+Disallow:/css
+Sitemap: https://www.sevha.com/sitemap.xml

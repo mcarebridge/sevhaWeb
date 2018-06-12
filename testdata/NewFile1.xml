@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaredPerson>
+	<ID>2352</ID>
+	<Name>Somone3 Srivastava</Name>
+	<RxPrescribed>
+		<ID>2651</ID>
+		<RxTag>Diabetes</RxTag>
+		<Physician>
+			<ID>2601</ID>
+			<Name>Kushal Sarda</Name>
+		</Physician>
+		<CareGiver>
+			<ID>2501</ID>
+			<Name>Dheeraj Srivastava</Name>
+		</CareGiver>
+		<RxLines>
+			<ID>2701</ID>
+			<Rx>Drug1</Rx>
+			<Dosage>100</Dosage>
+			<Route>PO</Route>
+			<ScheduleByHours>TID</ScheduleByHours>
+		</RxLines>
+		<RxLines>
+			<ID>2702</ID>
+			<Rx>Drug2</Rx>
+			<Dosage>200</Dosage>
+			<Route>PO</Route>
+			<ScheduleByHours>TID</ScheduleByHours>
+		</RxLines>
+		<RxLines>
+			<ID>2703</ID>
+			<Rx>Dryg3</Rx>
+			<Dosage>5</Dosage>
+			<Route>IM</Route>
+			<ScheduleByHours>MOD</ScheduleByHours>
+		</RxLines>
+	</RxPrescribed>
+	<PreExistingCondition>
+		<ID>999999</ID>
+		<Condition>
+			<Name>Default</Name>
+			<Symptoms>
+				<ID>1003</ID>
+				<Tag>Fatigue</Tag>
+			</Symptoms>
+			<Symptoms>
+				<ID>1004</ID>
+				<Tag>Headache</Tag>
+			</Symptoms>
+			<Symptoms>
+				<ID>1005</ID>
+				<Tag>Black Out</Tag>
+			</Symptoms>
+			<Symptoms>
+				<ID>1006</ID>
+				<Tag>Dizziness</Tag>
+			</Symptoms>
+			<Symptoms>
+				<ID>1007</ID>
+				<Tag>Sweating</Tag>
+			</Symptoms>
+			<Symptoms>
+				<ID>1008</ID>
+				<Tag>Fever</Tag>
+			</Symptoms>
+			<Symptoms>
+				<ID>1009</ID>
+				<Tag>Vomiting</Tag>
+			</Symptoms>
+			<Symptoms>
+				<ID>1010</ID>
+				<Tag>Blurred Vision</Tag>
+			</Symptoms>
+		</Condition>
+	</PreExistingCondition>
+	<EmergencyResponse>
+		<Provider>
+			<ID>0</ID>
+			<Name>-</Name>
+			<Contact>-</Contact>
+			<Cell>-</Cell>
+			<Fixed>-</Fixed>		<!-- to be taken out -->
+			<ContactPerson>-</ContactPerson>
+		</Provider>
+	</EmergencyResponse>
+</CaredPerson>

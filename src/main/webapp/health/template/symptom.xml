@@ -1,0 +1,4 @@
+<Symptoms>
+	<ID>${symid}</ID>
+	<Tag>${symtag}</Tag>
+</Symptoms>

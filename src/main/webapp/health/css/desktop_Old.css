@@ -1,0 +1,290 @@
+@CHARSET "ISO-8859-1";
+
+@import url(http://fonts.googleapis.com/css?family=Russo+One);
+
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
+@import url(http://fonts.googleapis.com/css?family=Prosto+One);
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@import
+	url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+@media only screen and (max-device-width:1600px) {
+	body {
+		font-family: 'Roboto', sans-serif;
+		color: #191919;
+		align: center;
+		vertical-align: middle;
+		background-color: transparent;
+		overflow-x: hidden;
+	}
+	div {
+		font-size: 1em;
+	}
+	p {
+		font-size: 1em;
+	}
+	table, tr, td {
+		font-size: 1em;
+		font-weight: normal;
+		padding: 0.2em 0.2em 0.2em 0.2em;
+	}
+	th {
+		font-size: 1.2em;
+		background: #CCCCCC;
+	}
+	a {
+		font-size: 1em;
+		color: #006699;
+		font-style: normal;
+	}
+	a:hover {
+		font-size: 1em;
+		color: #425555;
+		font-style: normal;
+	}
+	a:visited {
+		font-size: 1em;
+		color: #8a2e5c;
+		font-style: normal;
+	}
+	select, option {
+		font-family: 'Oswald', sans-serif;
+		font-size: 0.9em;
+		background-color: transparent;
+		width: 10em;
+		direction: rtl;
+	}
+	#dateCalendar {
+		font-style: underline;
+		image: /health/images/calendar.png;
+	}
+	input[type="text"], input[type="password"] {
+		font-family: 'Oswald', sans-serif;
+		font-size: 0.9em;
+		background-color: transparent;
+		border-top: 1px;
+		border-left: 1px;
+		border-right: 1px;
+		border-bottom: 1px dashed #7eb9d0;
+		color: #214858;
+		width: 10em;
+		text-align: right;
+	}
+	input[type="text"]:focus, input[type="password"]:focus {
+		font-family: 'Oswald', sans-serif;
+		font-size: 0.9em;
+		background-color: #EEEEEE;
+		border-top: 0px;
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 1px 1px 1px 1px solid #7eb9d0;
+		color: #214858;
+		width: 10em;
+	}
+	.mustEnter {
+		color: red;
+		margin-right: 0.2em;
+		size: 0.8em;
+	}
+	button, submit {
+		font-size: 1.0em;
+		background-color: #045FB4;
+		color: #FFFFFF;
+		width: 10em;
+	}
+	textarea {
+		font-size: 1.0em;
+	}
+	ul {
+		margin: 0.75em 0;
+		padding: 0 1em;
+		list-style: none;
+	}
+	li:before { -
+		-position: relative; -
+		-content: ""; -
+		-border-color: transparent red; -
+		-border-style: solid; -
+		-border-width: 0.35em 0 0.35em 0.45em; -
+		-display: block; -
+		-height: 0; -
+		-width: 0; -
+		-left: -1em; -
+		-top: 0.3em;
+		margin-right: 0.2em;
+	}
+	.logout {
+		position: relative;
+		left: 80%;
+		align: right;
+		width: auto;
+		font-weight: bold;
+	}
+	h1 {
+		color: #191919;
+		font-size: 3em;
+		font-weight: normal;
+	}
+	h2 {
+		color: #191919;
+		font-size: 2em;
+		font-weight: normal;
+	}
+	h3 {
+		color: #191919;
+		font-size: 1.2em;
+		font-weight: normal;
+	}
+	h4 {
+		color: #191919;
+		font-size: 1.1em;
+		font-weight: normal;
+		color: #669900;
+	}
+	.errbox {
+		font-size: 1em;
+		background: #FFF2C0;
+		border-radius: 10px 10 10px 10px;
+		color: #FF3300;
+	}
+	#main {
+		position: relative;
+		top: 0%;
+		left: 0%;
+		right: 0%;
+		width: auto;
+		background-color: transparent;
+		border-width: 0.1em;
+		border-style: solid;
+		border-color: #CCCCCC;
+		padding: 0.03em 0.03em 0.03em 0.03em;
+		overflow-x: hidden;
+	}
+	#contents {
+		position: relative;
+		top: 0%;
+		left: 20%;
+		right: 20%;
+		width: 60%;
+		padding: 0.1em 0.1em 0.1em 0.1em;
+		background-color: transparent;
+	}
+	#phyList {
+		left: 10%;
+	}
+	#phyList div {
+		position: relative;
+		left: 10%;
+		padding: 2px;
+	}
+	.loginBox {
+		position: absolute;
+		top: 30%;
+		left: 35%;
+		right: 35%;
+		width: 30%;
+		background-color: transparent;
+		border-width: 0.1em;
+		border-style: solid;
+		border-color: #AAAAAA;
+		background-color: transparent;
+	}
+	.loginBoxInternal {
+		position: relative;
+		width: auto;
+		left: 15%;
+		right: 15%;
+		width: 70%;
+		background-color: transparent;
+	}
+	.logout {
+		position: relative;
+		width: auto;
+		left: 80%;
+		right: 5%;
+		background-color: transparent;
+	}
+	.logo { -
+		-font-family: 'Roboto', sans-serif;
+		font-family: 'Montserrat Alternates', sans-serif;
+		position: relative;
+		left: 0%;
+		padding: 0.1em 1em 0.1em 1em;
+		width: auto;
+		font-size: 2.0em;
+		font-weight: normal;
+		color: #FFFFFF;
+		background-color: #ACC875;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#ACC875),
+			to(#a7bad0));
+	}
+	.loggedInAs {
+		color: #cc6666;
+		font-size: 0.85em;
+	}
+	input[type="submit"], input[type="button"], input[type="reset"] {
+		font-size: 1em;
+		width: 8em;
+		border: 1px solid #7eb9d0;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-padding: 10px 10px 10px 10px;
+		text-decoration: none;
+		display: inline-block;
+		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+		font-weight: bold;
+		color: #FFFFFF;
+		background-color: #a7cfdf;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#a7cfdf),
+			to(#23538a));
+		background-image: -webkit-linear-gradient(top, #a7cfdf, #23538a);
+		background-image: -moz-linear-gradient(top, #a7cfdf, #23538a);
+		background-image: -ms-linear-gradient(top, #a7cfdf, #23538a);
+		background-image: -o-linear-gradient(top, #a7cfdf, #23538a);
+		background-image: linear-gradient(to bottom, #a7cfdf, #23538a);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+			startColorstr=#a7cfdf, endColorstr=#23538a);
+		border: 1px solid #7eb9d0;
+	}
+	input[type="submit"], input[type="button"], input[type="reset"]:hover {
+		border: 1px solid #5ca6c4;
+		background-color: #82bbd1;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#82bbd1),
+			to(#193b61));
+		background-image: -webkit-linear-gradient(top, #82bbd1, #193b61);
+		background-image: -moz-linear-gradient(top, #82bbd1, #193b61);
+		background-image: -ms-linear-gradient(top, #82bbd1, #193b61);
+		background-image: -o-linear-gradient(top, #82bbd1, #193b61);
+		background-image: linear-gradient(to bottom, #82bbd1, #193b61);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+			startColorstr=#82bbd1, endColorstr=#193b61);
+	}
+	#triangle-right {
+		width: 0;
+		height: 0;
+		border-top: 5px solid transparent;
+		border-left: 10px solid red;
+		border-bottom: 5px solid transparent;
+	}
+	.complianceTable {
+		border-width: 1px;
+		border-style: solid;
+	}
+	.complianceTable.tr {
+		border-style: solid;
+	}
+	.complianceTable.td {
+		border-style: solid;
+	}
+	.footer {
+		position: relative;
+		width: auto;
+		background-color: #EBF5CC;
+	}
+}

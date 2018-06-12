@@ -1,0 +1,11 @@
+<EmergencyResponse>
+	<Provider>
+		<ID>${emgprovid}</ID>
+		<Name>${emgprovname}</Name>
+		<Contact>${emgcntnm}</Contact>
+		<Cell>${emgcntcell}</Cell>
+		<Fixed>${emgfixed}</Fixed>
+		<!-- to be taken out -->
+		<ContactPerson>${emgcntperson}</ContactPerson>
+	</Provider>
+</EmergencyResponse>

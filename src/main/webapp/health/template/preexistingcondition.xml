@@ -1,0 +1,4 @@
+<PreExistingCondition>
+	<ID>${pre_ext_condid}</ID>
+	${condition}	
+</PreExistingCondition>

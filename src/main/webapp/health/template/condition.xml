@@ -1,0 +1,4 @@
+<Condition>
+	<Name>${condname}</Name>
+	${symptom}	
+</Condition>

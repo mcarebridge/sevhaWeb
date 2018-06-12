@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type"  content="text/html charset=UTF-8" />
+		<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+      		<style>
+         		body {
+         			background-color:#FFFFFF;
+         			font-family:Arial;
+         			}
+         		h1 {
+         			
+         		   }
+         		   
+         		.careResultsTbl {
+					left: 5%;
+					width: 100%;
+					background: #FFFFFF;
+				}
+      		</style>
+	</head>
+	<body>
+		<div>
+			<div style="font-family: 'Prata', serif; font-size: 2.0em;color: #FFFFFF;background-color: #8F7C2F;">
+			   <span style="margin-left:2%;">sevh&#257;</span>
+		    </div>
+			<div id="contents">
+				<div style="margin-left:3%;">
+					<h3>
+						Health Results
+					</h3>
+				</div>				
+				<div style="font-size: 0.90em;">
+					<div
+						style="margin-left: 0%; background: #F9F9F9; padding: 2px 5px 2px 2px; min-height: 1.5em; max-height: 2.5em;">
+						<span style="font-weight: bold;">Age :</span> <span style="">$emailContentsObject.age&nbsp;Years</span>
+						<span style="font-weight: bold; margin-left: 5%;">Gender:</span> 
+						<span>
+							#if( $emailContentsObject.gender == 1 )
+    							Male
+							#elseif( $emailContentsObject.gender == 2 )
+    							Female
+							#else
+    							Others
+							#end
+						</span>
+					</div>
+				</div>
+					<br>
+			#foreach( $key in $emailContentsObject.userObject.keySet() )
+    			#set($vsOutPutDTO = $emailContentsObject.userObject.get($key))
+					<div class="careResultsTbl">
+						<table style="border-spacing: 0px; margin: 0px; width: 100%;">
+							<tr>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; border-right-width: 0px; padding: 5px; width: 50%;">Vitals</td>
+								#set($origStr = $vsOutPutDTO.vitalSignSubType)
+								#set($replStr = $origStr.replace("_", " "))
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; padding: 5px; width: 50%;">$replStr</td>
+							</tr>
+							<tr>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; border-right-width: 0px; padding: 5px; width: 50%;">IDEAL
+									Value</td>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; padding: 5px; width: 50%;">
+									
+									#if( $vsOutPutDTO.vitalSignCatValIDEAL.minTargetValue < 0)
+	    								Less than
+									#else
+										$vsOutPutDTO.vitalSignCatValIDEAL.minTargetValue
+									#end
+									- $vsOutPutDTO.vitalSignCatValIDEAL.maxTargetValue
+								</td>
+							</tr>
+							<tr>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; border-right-width: 0px; padding: 5px; width: 50%;">Provided
+									Value</td>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; padding: 5px; width: 50%;">$vsOutPutDTO.vitalSignValueProvided
+									$vsOutPutDTO.vitalSignCatValIDEAL.vitalSignCategory.model.vitalSignSubType.model.vitalSignSubTypeUnit
+								</td>
+							</tr>
+							<tr>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; border-right-width: 0px; padding: 5px; width: 50%;">Category</td>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; padding: 5px; width: 50%;">
+									#if($vsOutPutDTO.vitalSignCatValReported != "" )
+										$vsOutPutDTO.vitalSignCatValReported.vitalSignCategory.model.vitalSignCategoryName
+									#end
+								</td>
+							</tr>
+							<tr>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; border-right-width: 0px; padding: 5px; width: 50%;">Health
+									Status</td>
+								<td
+									style="border-style: solid; border-color: #cccccc; border-spacing: 0px; padding: 5px; width: 50%;">
+									#if( $vsOutPutDTO.vitalSignCatValReported.vitalSignCategory.model.klass == "R" )
+	    								RED
+									#elseif( $vsOutPutDTO.vitalSignCatValReported.vitalSignCategory.model.klass == "G" )
+	    								GREEN
+									#elseif( $vsOutPutDTO.vitalSignCatValReported.vitalSignCategory.model.klass == "Y" )
+	    								YELLOW
+	    							#elseif( $vsOutPutDTO.vitalSignCatValReported.vitalSignCategory.model.klass == "E" )
+	    								EMERGENCY										
+	    							#end	
+								</td>
+							</tr>
+						</table>
+					</div>
+					<hr style="width: 80%;">
+				#end
+			</body>
+	</html>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<context-param>
+		<param-name>slim3.rootPackage</param-name>
+		<param-value>com.phr.ade</param-value>
+	</context-param>
+	<context-param>
+		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+		<param-value>application</param-value>
+	</context-param>
+	<context-param>
+		<param-name>javax.servlet.jsp.jstl.fmt.request.charset</param-name>
+		<param-value>UTF-8</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>HotReloadingFilter</filter-name>
+		<filter-class>org.slim3.controller.HotReloadingFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>DatastoreFilter</filter-name>
+		<filter-class>org.slim3.datastore.DatastoreFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>FrontController</filter-name>
+		<filter-class>org.slim3.controller.FrontController</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>HotReloadingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>DatastoreFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FrontController</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+
+	<!-- Remote API Servlet -->
+	<servlet>
+		<display-name>Remote API Servlet</display-name>
+		<servlet-name>RemoteApiServlet</servlet-name>
+		<servlet-class>com.google.apphosting.utils.remoteapi.RemoteApiServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoteApiServlet</servlet-name>
+		<url-pattern>/remote_api</url-pattern>
+	</servlet-mapping>
+
+	<!-- TEM2 -->
+	<!-- <servlet> <display-name>oAuth Call Back Servlet</display-name> <servlet-name>ADEOAuthCallBackServlet</servlet-name> 
+		<servlet-class>com.phr.ade.servlet.ADEOAuthCallBackServlet </servlet-class> 
+		<load-on-startup>1</load-on-startup> </servlet> <servlet-mapping> <servlet-name>ADEOAuthCallBackServlet</servlet-name> 
+		<url-pattern>/authCallBack</url-pattern> </servlet-mapping> -->
+
+	<!-- TEM3 -->
+	<!-- <servlet> <display-name>oAuth Call Back Servlet</display-name> <servlet-name>OAuth2Callback</servlet-name> 
+		<servlet-class>com.phr.ade.servlet.OAuth2Callback </servlet-class> <load-on-startup>1</load-on-startup> 
+		</servlet> <servlet-mapping> <servlet-name>OAuth2Callback</servlet-name> 
+		<url-pattern>/oauth2CallBack</url-pattern> </servlet-mapping> -->
+
+	<servlet>
+		<servlet-name>GlobalTransactionServlet</servlet-name>
+		<servlet-class>org.slim3.datastore.GlobalTransactionServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- <servlet> <servlet-name>GWTServiceServlet</servlet-name> <servlet-class>org.slim3.gwt.server.rpc.GWTServiceServlet</servlet-class> 
+		<load-on-startup>1</load-on-startup> </servlet> -->
+
+	<servlet>
+		<servlet-name>KtrWjrServiceServlet</servlet-name>
+		<servlet-class>bufferings.ktr.wjr.server.service.KtrWjrServiceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GlobalTransactionServlet</servlet-name>
+		<url-pattern>/slim3/gtx</url-pattern>
+	</servlet-mapping>
+
+	<!-- <servlet-mapping> <servlet-name>GWTServiceServlet</servlet-name> <url-pattern>*.s3gwt</url-pattern> 
+		</servlet-mapping> -->
+
+	<servlet-mapping>
+		<servlet-name>KtrWjrServiceServlet</servlet-name>
+		<url-pattern>/ktrwjr/ktrwjr/ktrwjr.s3gwt</url-pattern>
+	</servlet-mapping>
+
+	<!-- Time out in 30 minutes -->
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name></web-resource-name>
+			<url-pattern>*.jsp</url-pattern>
+		</web-resource-collection>
+	</security-constraint>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name></web-resource-name>
+			<url-pattern>/slim3/gtx</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name></web-resource-name>
+			<url-pattern>/ktrwjr/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+</web-app>

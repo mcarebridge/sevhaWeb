@@ -1,0 +1,7 @@
+<RxPrescribed>
+	<ID>${rxid}</ID>
+	<RxTag>${rxtag}</RxTag>
+	${physician}
+	${caregiver}
+	${rxlines}		
+</RxPrescribed>

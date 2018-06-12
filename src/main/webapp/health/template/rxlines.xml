@@ -1,0 +1,7 @@
+<RxLines>
+	<ID>${rxlineid}</ID>
+	<Rx>${rx}</Rx>
+	<Dosage>${rxdosage}</Dosage>
+	<Route>${rxroute}</Route>
+	<ScheduleByHours>${rxschdl}</ScheduleByHours>
+</RxLines>

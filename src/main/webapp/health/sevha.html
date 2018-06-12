@@ -1,0 +1,195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link href="css/mobile.css" media="(max-width:1040px)" rel="stylesheet"
+	type="text/css" />
+<link href="css/desktop.css" media="(min-width:1041px)" rel="stylesheet"
+	type="text/css" />
+<link rel="stylesheet"
+	href="css/webfont-medical-icons/css/wfmi-style.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-store,no-cache">
+			<meta name="viewport"
+				content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<meta name="Keywords" content="" />
+				<meta name="Description" content="" />
+				<title>Welcome to sevha</title> <script src="scripts/jquery.min.js"></script>
+				<script language=javascript type='text/javascript'>
+					var uagent = navigator.userAgent.toLowerCase();
+					//alert("Dimensions of document: " + $(document).width() + "x" + $(document).height());
+					//alert("Dimensions of window: " + $(window).width() + "x"
+					//		+ $(window).height());
+				</script>
+
+				<script src="scripts/jquery.min.js"></script>
+				<script src="scripts/modernizr.min.js"></script>
+				<script src="scripts/jquery.slicknav.js"></script>
+				<script src="scripts/rxScheduleBuilder.js"></script>
+				<script src="scripts/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+				<script src="scripts/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+
+				<!--  CSS for Menu -->
+				<link rel="stylesheet" href="css/style.css" />
+				<link rel="stylesheet" href="css/slicknav.css" />
+				<link rel="stylesheet"
+					href="scripts/jquery-ui-1.11.1.custom/jquery-ui.css" />
+				<link rel="stylesheet"
+					href="scripts/jquery-ui-1.11.1.custom/jquery-ui.min.css" />
+				<link rel="stylesheet"
+					href="scripts/jquery-ui-1.11.1.custom/jquery-ui.structure.css" />
+
+				<script language=javascript type='text/javascript'>
+					function submitForm(_actionParam) {
+						//alert(_actionParam);
+						document.forms[0].actionParam.value = _actionParam;
+						document.forms[0].submit();
+						var submitButton = eval("document.forms[0]."
+								+ _actionParam);
+						submitButton.disabled = true;
+						submitButton.value = "Please wait...";
+						return true;
+
+					}
+
+					function submitFormWithKey(_actionParam, _key) {
+						//alert(_actionParam);
+						document.forms[0].actionParam.value = _actionParam;
+						document.forms[0].key.value = _key;
+						document.forms[0].submit();
+						var submitButton = eval("document.forms[0]."
+								+ _actionParam);
+						submitButton.disabled = true;
+						submitButton.value = "Please wait...";
+						return true;
+					}
+				</script>
+</head>
+<body
+	style="position: absolute; border-style: none; width: 100%; left: 0%; padding-left: 0px; margin-left: 0%; background-color: #FFFFFF;">
+	<form name="auth" action="authenticate" method="post">
+		<div z-index:="999" id="headerSection"
+			style="position: relative; border-style: none; height: 4em; background-color: #ACC875;">
+		</div>
+		<div
+			style="width: 80%; margin-left: 10%; margin-right: 10%; margin-top: -4em;">
+			<div
+				style="position: relative; border-style: none; border-color: black; background-color: transparent;">
+				<div>
+					<span class='logo' style="background-color: transparent;">sevhā</span>
+				</div>
+				<div style="margin-left: 0%;">
+					<span style="padding-right: 2%"><i
+						class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="/">Home</a></span>
+					<span style="padding-right: 2%"><i class="fa fa-tachometer"
+						aria-hidden="true"></i>&nbsp;<a
+						href="/health/register?actionParam=CAREPORTAL">Healthmeter</a></span> <span
+						style="padding-right: 2%"><i class="fa fa-rocket"
+						aria-hidden="true"></i>&nbsp;<a href="#">Launch</a></span> <span
+						style="padding-right: 2%"><i class="fa fa-rocket"
+						aria-hidden="true"></i>&nbsp;<a
+						href="javascript:submitForm('APPLN')">Launch</a></span> <span
+						style="padding-right: 2%"><i class="fa fa-address-card"
+						aria-hidden="true"></i>&nbsp;<a href="#block-3">about us</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="content"
+			style="width: 80%; margin-left: 10%; margin-right: 10%;">
+			<div id="block-1"
+				style="border-radius: 0px 0px 10px 10px; border-top: none;">
+				<div class="imgbkgrd"
+					style="position: relative; background-position: 50%; background-image: url('images/london.jpg'); background-repeat: no-repeat;">
+					<div class="bnnr__hdln">Life is Busy. Families are spread
+						across cities. Managing family health cost is a challenge.</div>
+				</div>
+			</div>
+			<br></br>
+			<div
+				style="position: relative; height: 20px; background: transparent;"></div>
+			<div id="block-2" style="position: relative">
+				<div class="imgbkgrd"
+					style="position: relative; width: 50%; background-position: 10%; background-image: url('images/hands.jpg'); background-repeat: no-repeat;">
+					<div class="bnnr__hdln_1"
+						style="margin-left: 58%; margin-top: 5%; width: 80%; font-size: 1.05em;">
+						<span> Every family have elderly. Managing health in old
+							age is difficult and costly. </span> <br></br> <span> Few have
+							suffered brain stroke, and old age disorder like Parkinson's,
+							dementia and Alzheimer's disease. Many of us are having long term
+							disorders like hypertension, diabetes, cardiovascular diseases
+							and depression and that too at young. </span> <br></br> <span>
+							Most of these disorders lead to complex situation for not able to
+							comply with medication routine. Do not follow body symptoms and
+							seek primary care in time. This leads to medical emergency. </span>
+					</div>
+				</div>
+			</div>
+			<br></br>
+			<div
+				style="position: relative; height: 20px; background: transparent;"></div>
+			<div id="block-3">
+				<div class="imgbkgrd"
+					style="position: relative; background-position: 90%; background-image: url('images/airport.jpg'); background-repeat: no-repeat;">
+					<div class="bnnr__hdln_3"
+						style="left: 2%; text-align: center; background: #ACC875; border-radius: 10px 10px 10px 10px;">
+						<span
+							style="font-family: 'Prata', serif; color: #FFFFFF; font-size: 1.0em">sevhā</span>
+						<span> provides a digital platform to seamlessly connect
+							'you', 'your family' and 'your physician'. </span>
+					</div>
+					<div
+						style="position: relative; height: 4em; margin-left: 2%; width: 50%; margin-top: 5%;">
+						<div style="position: relative;">
+							<span class="bnnr__hdln_4"
+								style="width: 35%; top: 0%; left: 2%; background: red; border-width: thin; border-style: none; padding: 1% 1% 1% 1%;">
+								<a href="/health/register?actionParam=CAREPORTAL"
+								class="bnnr__hdln_4 a">Healthmeter</a>
+							</span>
+						</div>
+						<div style="position: relative; margin-top: 3%; width: 50%;">
+							<span
+								style="background: transparent; margin-left: 1%; margin-top: 4%; font-size: 0.75em;">Click
+								on Healthemeter to check your Vitals. </span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<br></br>
+			<div
+				style="position: relative; height: 20px; background: transparent;"></div>
+			<div
+				style="height: 20px; background: transparent; position: relative;"></div>
+			<div id="block-4"
+				style="border-radius: 10px 10px 0px 0px; margin-bottom: 0px;">
+
+				<div class="imgbkgrd"
+					style="position: relative; width: 100%; background-position: 50%; background-image: url('images/water_jump.jpg'); background-repeat: no-repeat;">
+					<div class="bnnr__hdln_2" style="width: 60%; margin-left: 10%">
+						<span style="font-family: 'Prata', serif; font-size: 5em;color:#FFFFFF;">sevhā</span>
+					</div>
+					<div class="bnnr__hdln_2" style="width: 80%; margin-left: 0%">Track
+						Symptoms. RxCompliance. Health Alerts.</div>
+				</div>
+			</div>
+			<div
+				style="position: relative; top: -2px; height: 20px; background: #f9f9f9; margin-top: 0px; padding-top: 0px;"></div>
+		</div>
+		<!--  Web text contents end -->
+		<div
+			style="position: relative; top: -8px; background-color: #525456; min-height: 100px;">
+			<div
+				style="position: relative; top: 40px; text-align: center; font-size: 0.8em; background: transparent; color: #cccccc; border-color: #dddddd; border-width: 1px 1px 1px 1px; border-style: none;">
+				<div style="border-width: 0px 0px 0px 0px; border-style: none">
+					<span>&copy;</span> <span style="">sevhā LLC</span>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
