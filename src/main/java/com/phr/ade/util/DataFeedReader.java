@@ -316,6 +316,7 @@ public class DataFeedReader
 	 */
 	private void readMasterData(String entityType) throws IOException
 	{
+		logger.log(Level.INFO, "### Reading Master Entiry" + entityType);
 		EntityUtilDAO _euDAO = new EntityUtilDAO();
 		MasterData _masterData = _euDAO.readMasterData(entityType);
 		String _masterDataStr = _masterData.getData().getValue();

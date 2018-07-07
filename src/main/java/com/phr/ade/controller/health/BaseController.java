@@ -38,9 +38,10 @@ import com.phr.ade.service.PrescriptionService;
 import com.phr.ade.service.VitalParameterService;
 import com.phr.ade.util.CareUtil;
 import com.phr.ade.util.CaredPersonRxComplianceSnapShot;
+import com.phr.ade.util.UtilCommonConstants;
 import com.phr.ade.values.ICareBridgeConstants;
 
-public abstract class BaseController extends Controller implements ICareBridgeConstants {
+public abstract class BaseController extends Controller implements ICareBridgeConstants, UtilCommonConstants {
 
 	private static Logger logger = Logger.getLogger(BaseController.class.getName());
 	String pageTitle = "title.welcome";

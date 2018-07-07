@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indices written at Sun, 19 Mar 2017 20:00:44 UTC -->
+<datastore-indexes autoGenerate="false">
+	<!-- Used 1 time in query history -->
+	<datastore-index kind="VitalParameter" ancestor="false"
+		source="auto">
+		<property name="caredPerson" direction="asc" />
+		<property name="createdDate" direction="desc" />
+	</datastore-index>
+
+	<!-- Used 21 times in query history -->
+	<datastore-index kind="PrescriptionLines"
+		ancestor="false" source="auto">
+		<property name="prescription" direction="asc" />
+		<property name="stopRxLine" direction="asc" />
+		<property name="rxstartdate" direction="asc" />
+	</datastore-index>
+
+	<!-- Used 7 times in query history -->
+	<datastore-index kind="CaredPersonRxResponse"
+		ancestor="false" source="auto">
+		<property name="caredPerson" direction="asc" />
+		<property name="responseDateTime" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="PrescriptionLines"
+		ancestor="false" source="manual">
+		<property name="prescription" direction="asc" />
+		<property name="rxstartdate" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="CaredPersonRxResponse"
+		ancestor="false" source="manual">
+		<property name="caredPerson" direction="asc" />
+		<property name="responseDay" direction="asc" />
+		<property name="responseMonth" direction="asc" />
+		<property name="responseYear" direction="asc" />
+		<property name="responseHour" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="VitalSignCategoryValues"
+		ancestor="false" source="manual">
+		<property name="gender" direction="asc" />
+		<property name="vitalSignCategory" direction="asc" />
+		<property name="maxAge" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="Prescription" ancestor="false"
+		source="manual">
+		<property name="caredPerson" direction="asc" />
+		<property name="rxStartDate" direction="asc" />
+	</datastore-index>
+
+</datastore-indexes>

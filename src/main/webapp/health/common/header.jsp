@@ -317,32 +317,53 @@ code for slider -->#custom-handle {
 							+ ".value = _fieldValue";
 					eval(_str1);
 				}
+
+				function timezone() {
+					var d = new Date();
+					// calcs offset in mins from GMT
+					var n = d.getTimezoneOffset();
+					document.forms[0].timezoneoffset.value = n;
+				}
 			</script>
 
 			<!--  script to handle spinner -->
 			<script>
-				
-					$(window).load(function()
-						{$('button').click(function() 
-							{
-								var _id = this.id;
-								if(_id != 'reset')
-									$('<div class=loadingDiv><i class="fa fa-gear fa-spin" style="font-size:3em;margin-left:48%;margin-top:20%;"></i></div>').prependTo(document.getElementById('main'));
-							});
+				$(window)
+						.load(
+								function() {
+									$('button')
+											.click(
+													function() {
+														var _id = this.id;
+														if (_id != 'reset')
+															$(
+																	'<div class=loadingDiv><i class="fa fa-gear fa-spin" style="font-size:3em;margin-left:48%;margin-top:20%;"></i></div>')
+																	.prependTo(
+																			document
+																					.getElementById('main'));
+													});
 
-						});
-					
-					$(window).load(function()
-							{$('a').click(function() 
-								{
-								var _id = this.getAttribute("href");
-								//alert(_id);
-								if(_id != '#' | _id.conatins('showAdvMeter'))
-									$('<div class=loadingDiv><i class="fa fa-gear fa-spin" style="font-size:3em;margin-left:48%;margin-top:20%;"></i></div>').prependTo(document.getElementById('main'));
 								});
 
-							});
-					
-				 
+				$(window)
+						.load(
+								function() {
+									$('a')
+											.click(
+													function() {
+														var _id = this
+																.getAttribute("href");
+														//alert(_id);
+														if (_id != '#'
+																| _id
+																		.conatins('showAdvMeter'))
+															$(
+																	'<div class=loadingDiv><i class="fa fa-gear fa-spin" style="font-size:3em;margin-left:48%;margin-top:20%;"></i></div>')
+																	.prependTo(
+																			document
+																					.getElementById('main'));
+													});
+
+								});
 			</script>
 </head>

@@ -26,7 +26,7 @@ public class MasterDataUtil implements UtilCommonConstants
 	private String       entityTypes[] = new String[] {	                                   
 	                                   PHYSICIAN_SPECIALITY,
 	                                   COMMON_EXISTING_DISEASES,
-	                                   PRE_EXISTING_DISEASES_SYMPTOM, 
+	                                   PRE_EXISTING_DISEASES_SYMPTOM,
 	                                   VITAL_SIGN,
 	                                   VITAL_SIGN_SUB_TYPE,
 	                                   VITAL_SIGN_CATEGORY,

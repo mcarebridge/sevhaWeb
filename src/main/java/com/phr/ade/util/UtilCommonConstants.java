@@ -14,8 +14,9 @@ public interface UtilCommonConstants
 	
 	
 	//Email fields
-//	String EMAIL_SENDER = "wellness@sevha.com";
-	String EMAIL_SENDER = "timaaah@gmail.com";
+	String HOST_SERVER  = "sevha.com";
+	String EMAIL_SENDER = "wellness@sevha.com";
+//	String EMAIL_SENDER = "timaaah@gmail.com";
 	String EMAIL_SENDER_NAME = "sevha";
 	
 }

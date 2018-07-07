@@ -84,6 +84,7 @@ public class AuthenticateController extends BaseController
 			_profileId = (Long) sessionScope("profileId");
 			System.out.println("---Profile Id ----" + _profileId);
 			_service.firstTimeUserUpdate(_profileId);
+			paintDashboard();
 			fwdPage = "load/careDashboard.jsp";
 		} else if (action != null && action.equalsIgnoreCase("CHGPASSWORD"))
 		{

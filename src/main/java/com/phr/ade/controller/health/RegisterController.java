@@ -135,7 +135,7 @@ public class RegisterController extends BaseController {
 		_newUserEmail.setFirstName(profile.getFirstname());
 		_newUserEmail.setSecondName(profile.getLastname());
 		_newUserEmail.setEmailAddress(profile.getEmail());
-		_newUserEmail.setLaunchServer("mcarebridge.appspot.com");
+		_newUserEmail.setLaunchServer(HOST_SERVER);
 
 		String _body = CareMailUtil.loadVelocityTemplate("emailNewUser.vm", _newUserEmail);
 		CareMailDTO _mailDTO = new CareMailDTO();

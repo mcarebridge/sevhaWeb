@@ -115,7 +115,7 @@
 					aria-hidden="true"></i>&nbsp;<button id="portalHdrBtn"
 					onclick="submitForm('CAREPORTAL','register');">Healthmeter</button> </span> <span
 					style="padding-right: 2%"><i class="fa fa-rocket"
-					aria-hidden="true"></i>&nbsp;<a href="#">Launch</a></span>
+					aria-hidden="true"></i>&nbsp;<a href="javascript:submitForm('APPLN','authenticate')">Launch</a></span>
 					<!--  
 					<span
 					style="padding-right: 2%"><i class="fa fa-rocket"

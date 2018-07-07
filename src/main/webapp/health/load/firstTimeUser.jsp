@@ -1,9 +1,10 @@
 <%@include file="../common/header.jsp"%>
 <%@page pageEncoding="UTF-8" isELIgnored="false"%>
-<body>
+<body onload="timezone()">
 	<form name='register' action='authenticate' method='POST'>
 		<input name='actionParam' type='hidden' /> <input type='hidden'
 			${f:text("key")} />
+			<input name='timezoneoffset' type='hidden' value='0' />
 		<div id="main">
 			<div class='logo'>
 				<span>sevhā</span>
