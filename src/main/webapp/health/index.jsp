@@ -26,8 +26,8 @@
 				Apple Android integration, Digial services, Primarycare Physician, Hospitals 
 				" />
 				<meta name="Description" content="" />
-				<title>Welcome to sevhā</title> 
-				<script language=javascript type='text/javascript'>
+				<title>Welcome to sevhā</title> <script language=javascript
+					type='text/javascript'>
 					var uagent = navigator.userAgent.toLowerCase();
 					//alert("Dimensions of document: " + $(document).width() + "x" + $(document).height());
 					//alert("Dimensions of window: " + $(window).width() + "x"
@@ -80,16 +80,23 @@
 
 				<!--  script to handle spinner -->
 				<script>
-				$(window).load(function()
-						{$('button').click(function() 
-							{
-								var _id = this.id;
-								//Note : change the div tag as per the page. e.g : 'content'
-								if(_id != 'reset')
-									$('<div class=loadingDiv><i class="fa fa-gear fa-spin" style="font-size:3em;margin-left:48%;margin-top:20%;"></i></div>').prependTo(document.getElementById('content'));
-							});
+					$(window)
+							.load(
+									function() {
+										$('button')
+												.click(
+														function() {
+															var _id = this.id;
+															//Note : change the div tag as per the page. e.g : 'content'
+															if (_id != 'reset')
+																$(
+																		'<div class=loadingDiv><i class="fa fa-gear fa-spin" style="font-size:3em;margin-left:48%;margin-top:20%;"></i></div>')
+																		.prependTo(
+																				document
+																						.getElementById('content'));
+														});
 
-						});
+									});
 				</script>
 </head>
 <body
@@ -112,17 +119,21 @@
 				</span>
 				-->
 				<span style="padding-right: 2%"><i class="fa fa-tachometer"
-					aria-hidden="true"></i>&nbsp;<button id="portalHdrBtn"
-					onclick="submitForm('CAREPORTAL','register');">Healthmeter</button> </span> <span
-					style="padding-right: 2%"><i class="fa fa-rocket"
-					aria-hidden="true"></i>&nbsp;<a href="javascript:submitForm('APPLN','authenticate')">Launch</a></span>
-					<!--  
+					aria-hidden="true"></i>&nbsp;
+					<button id="portalHdrBtn"
+						onclick="submitForm('CAREPORTAL','register');">Healthmeter</button>
+				</span> <span style="padding-right: 2%"><i class="fa fa-rocket"
+					aria-hidden="true"></i>&nbsp;<a
+					href="javascript:submitForm('APPLN','authenticate')">Launch</a></span>
+				<!--  
 					<span
 					style="padding-right: 2%"><i class="fa fa-rocket"
 					aria-hidden="true"></i>&nbsp;<a
 					href="javascript:submitForm('APPLN','authenticate')">Launch</a></span>
 					-->
-				<span style="padding-right: 2%"><i class="fa fa-address-card"
+				<span style="padding-right: 2%"><i class="fa fa-android"
+					aria-hidden="true"></i>&nbsp;<a href="#block-5">playstore</a></span> <span
+					style="padding-right: 2%"><i class="fa fa-address-card"
 					aria-hidden="true"></i>&nbsp;<a href="#block-3">about us</a></span>
 			</div>
 		</div>
@@ -144,12 +155,12 @@
 						<span> Every family have elderly. Managing health in old
 							age is difficult and costly. </span> <br></br> <span> Few have
 							suffered brain stroke, and old age disorder like Parkinson's,
-							dementia and Alzheimer's disease. Many of us are having long term
-							disorders like hypertension, diabetes, cardiovascular diseases
+							Dementia and Alzheimer's disease. Many of us are having long term
+							disorders like Hypertension, Diabetes, Cardiovascular diseases
 							and depression and that too at young. </span> <br></br> <span>
 							Most of these disorders lead to complex situation for not able to
 							comply with medication routine. Do not follow body symptoms and
-							seek primary care in time. This leads to medical emergency. </span>
+							seek primary care in time. This leads to a medical emergency. </span>
 					</div>
 				</div>
 			</div>
@@ -169,7 +180,8 @@
 						style="position: relative; margin-left: 2%; width: 96%; margin-right: 2%; top: 0%;">
 						<div style="position: relative;">
 							<span class="bnnr__hdln_4">
-								<button id="portalHdrBtn" style="color: #FFFFFF"; onclick="submitForm('CAREPORTAL','register');">Healthmeter</button>
+								<button id="portalHdrBtn" style="color: #FFFFFF"
+									; onclick="submitForm('CAREPORTAL','register');">Healthmeter</button>
 							</span>
 						</div>
 						<div style="position: relative; margin-top: 3%; width: 100%;">
@@ -197,15 +209,29 @@
 				</div>
 			</div>
 			<div
-				style="position: relative; top: -2px; height: 10px; background: #f9f9f9; margin-top: 0px; padding-top: 0px;"></div>
+				style="position: relative; top: -2px; height: 10px; background: #f9f9f9; margin-top: 0px; padding-top: 0px;">
+			</div>
+			<div id="block-5">
+				<div style="margin-left: 10%">sevhā is now available on Google
+					Play.</div>
+				<div style="margin-left: 10%">
+					<a href="https://play.google.com/store/apps/details?id=com.phr.ade">
+						<img src="images/google-play-badge.png" alt="" width="226" height="88" >
+					</a>
+				</div>
+			</div>
 		</div>
 		<!--  Web text contents end -->
 		<div
-			style="position: relative; top: -8px; background-color: #525456; min-height: 100px;">
+			style="position: relative; top: 0px; background-color: #525456; min-height: 100px;">
 			<div
 				style="position: relative; top: 40px; text-align: center; font-size: 0.8em; background: transparent; color: #cccccc; border-color: #dddddd; border-width: 1px 1px 1px 1px; border-style: none;">
 				<div style="border-width: 0px 0px 0px 0px; border-style: none">
 					<span>&copy;</span> <span style="">sevhā LLC</span>
+				</div>
+				</br>
+				<div class="terms">
+					<a href="/health/legal">Terms of Use</a>
 				</div>
 			</div>
 		</div>

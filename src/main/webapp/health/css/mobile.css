@@ -457,6 +457,21 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	width: 100%;
 }
 
+.newlogo a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.newlogo a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.newlogo a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
 #headerSection {
 	position: relative;
 	border-style: none;
@@ -683,7 +698,7 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	border-color: yellow;
 }
 
-#block-1, #block-2, #block-3, #block-4 {
+#block-1, #block-2, #block-3, #block-4,#block-5 {
 	position: relative;
 	background: #f9f9f9;
 	border-width: 0px 0px 0px 0px;
@@ -765,13 +780,36 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 }
 
 #portalHdrBtn {
-	color:#006699;
-	padding : 0px 0px 0px 0px;
+	color: #006699;
+	padding: 0px 0px 0px 0px;
 	background-color: transparent;
-	text-decoration:none;
+	text-decoration: none;
 	border: none;
 	width: 5.5em;
 	font-size: 1.0em;
 	cursor: pointer;
+}
+
+.terms {
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+.terms a {
+	font-size: 1em;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.terms a:hover {
+	font-size: 1em;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.terms a:visited {
+	font-size: 1em;
+	color: #CCCCCC;
+	text-decoration: none;
 }
 }
