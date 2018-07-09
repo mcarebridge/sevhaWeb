@@ -51,4 +51,10 @@
 		<property name="rxStartDate" direction="asc" />
 	</datastore-index>
 
+	<datastore-index kind="CaredPersonRxLog"
+		ancestor="false" source="manual">
+		<property name="prescriptionLines" direction="asc" />
+		<property name="responseDateTime" direction="asc" />
+	</datastore-index>
+
 </datastore-indexes>
