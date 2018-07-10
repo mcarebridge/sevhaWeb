@@ -256,7 +256,7 @@
 										practitioner. 'sevhā' is a technology provider and not a
 										certified medical body or practitioner. </span> <span
 										style="text-decoration: underline">By clicking this
-										checkbox you except these terms of use.</span>
+										checkbox you accept these terms of use.</span>
 								</div>
 							</div>
 						</div>
