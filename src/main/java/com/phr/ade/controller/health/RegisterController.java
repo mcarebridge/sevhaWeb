@@ -125,7 +125,11 @@ public class RegisterController extends BaseController {
 		requestScope("showErrBox ", _isFormValid);
 		requestScope("pageTitle ", pageTitle);
 		requestScope("profile ", _profile);
-		sessionScope("profile ", _profile);
+
+		if (_profile != null) {
+			sessionScope("profile ", _profile);
+		}
+
 		return forward(fwdPage);
 	}
 

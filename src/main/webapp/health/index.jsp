@@ -147,6 +147,24 @@
 				</div>
 			</div>
 			<br></br>
+			<div id="block-1A"
+				style="border-radius: 0px 0px 10px 10px; border-top: none;">
+				<div class="imgbkgrd-1A">
+					<div class="bnnr__hdln_1A">November 14 is Diabetes Day</div>
+					<div class="bnnr__hdln_1A_sub">
+						<ul
+							style="padding-left: 40px; list-style-position: outside; list-style-type: square;">
+							<li style="">415 million adults have diabetes (1 in 11
+								adults)</li>
+							<li>46.5% of those with diabetes have not been diagnosed</li>
+							<li>12% of global health expenditure is spent on diabetes
+								($673 billion)</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<br></br>
 			<div
 				style="position: relative; height: 10px; background: transparent;"></div>
 			<div id="block-2" style="position: relative">
@@ -216,7 +234,8 @@
 					Play.</div>
 				<div style="margin-left: 10%">
 					<a href="https://play.google.com/store/apps/details?id=com.phr.ade">
-						<img src="images/google-play-badge.png" alt="" width="226" height="88" >
+						<img src="images/google-play-badge.png" alt="" width="226"
+						height="88">
 					</a>
 				</div>
 			</div>

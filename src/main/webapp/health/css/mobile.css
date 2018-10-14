@@ -509,6 +509,22 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	filter: grayscale(20%);
 }
 
+.imgbkgrd-1A {
+	position: relative;
+	margin: 2px 2px 2px 2px 2px;
+	display: block;
+	width: auto;
+	height: auto;
+	background-image: url("../images/global-diabetes-rates-mobile.png");
+	background-position: 10% 10% 10% 10%;
+	background-repeat: no-repeat;
+	border-width: 2px 2px 2px 2px;
+	border-radius: 0px 0px 10px 10px;
+	opacity: 0.7;
+	filter: alpha(opacity = 100);
+	filter: grayscale(20%);
+}
+
 .imgbkgrd-2 {
 	position: relative;
 	margin: 2px 2px 2px 2px 2px;
@@ -597,6 +613,37 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	text-align: left;
 	padding: 1% 1% 1% 1%;
 	text-align: left;
+}
+
+.bnnr__hdln_1A {
+	position: relative;
+	color: #212b31;
+	font-family: 'Roboto', Arial;
+	font-weight: bold;
+	font-size: 1.2em;
+	border-width: 2px 2px 2px 2px;
+	border-color: #CCCCCC;
+	background-color: transparent;
+	border-style: none;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: auto;
+	height: auto;
+	text-align: center;
+	padding: 20% 2% 2% 4%;
+}
+
+.bnnr__hdln_1A_sub {
+	font-size: 0.9em;
+	text-align: left;
+	color: #FFFFFF;
+	background-color: green;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: auto;
+	padding: 2% 2% 2% 4%;
+	border-radius: 10px 10px 10px 10px;
 }
 
 .bnnr__hdln_2 {
@@ -698,7 +745,7 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	border-color: yellow;
 }
 
-#block-1, #block-2, #block-3, #block-4,#block-5 {
+#block-1, #block-2, #block-3, #block-4, #block-5 {
 	position: relative;
 	background: #f9f9f9;
 	border-width: 0px 0px 0px 0px;
