@@ -136,7 +136,7 @@ public abstract class BaseController extends Controller implements ICareBridgeCo
 			requestScope("systemError", systemError);
 			requestScope("pageTitle", "page.error");
 			response.setHeader("Cache-Control", "no-cache");
-//			sessionScope("currentUser", null);
+//			sessionScope("currentUser", null); 
 			HttpSession session = request.getSession();
 			session.invalidate();
 			return forward("/health/error.jsp");
