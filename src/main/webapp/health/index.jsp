@@ -150,15 +150,21 @@
 			<div id="block-1A"
 				style="border-radius: 0px 0px 10px 10px; border-top: none;">
 				<div class="imgbkgrd-1A">
-					<div class="bnnr__hdln_1A">November 14 is Diabetes Day</div>
+					<div class="bnnr__hdln_1A" style="margin-top: 0%">November 14
+						is Diabetes Day</div>
 					<div class="bnnr__hdln_1A_sub">
 						<ul
-							style="padding-left: 40px; list-style-position: outside; list-style-type: square;">
-							<li style="">415 million adults have diabetes (1 in 11
-								adults)</li>
-							<li>46.5% of those with diabetes have not been diagnosed</li>
-							<li>12% of global health expenditure is spent on diabetes
-								($673 billion)</li>
+							style="padding-left: 10px; list-style-position: outside; list-style-type: square;">
+							<li style="padding: 2px">415 million adults have diabetes (1
+								in 11 adults)</li>
+							<li style="padding: 2px">46.5% of those with diabetes have
+								not been diagnosed</li>
+							<li style="padding: 2px">12% of global health expenditure is
+								spent on diabetes ($673 billion)</li>
+							<li
+								style="background-color: yellow; padding: 2px; border-radius: 5px; text-align: center;">
+								<a href="/health/register?actionParam=HEALTHDATA">How sevha manages adult and juvelie diabetes?</a>
+							</li>
 						</ul>
 					</div>
 

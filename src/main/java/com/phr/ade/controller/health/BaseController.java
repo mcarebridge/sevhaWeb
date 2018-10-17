@@ -59,11 +59,19 @@ public abstract class BaseController extends Controller implements ICareBridgeCo
 	@Override
 	protected Navigation run() throws Exception {
 		Validators v = null;
+		boolean _entryLevelFlag = false;
 		try {
 			actionParam = (String) requestScope("actionParam");
 
+			if (actionParam.equals("register") | actionParam.equals("authenticate")) {
+				_entryLevelFlag = true;
+			}
+
 			v = new Validators(request);
-			validateSession(v);
+
+			if (!_entryLevelFlag) {
+				validateSession(v);
+			}
 
 			// Always get it from session.
 			Long _careNeedyKey = extractSelectedCareId();

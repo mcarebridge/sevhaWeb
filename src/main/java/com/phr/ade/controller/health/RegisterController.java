@@ -120,6 +120,9 @@ public class RegisterController extends BaseController {
 
 			pageTitle = "title.careportal";
 			fwdPage = "load/carePortal.jsp";
+		} else if (action != null && action.equalsIgnoreCase("HEALTHDATA")) {
+			pageTitle = "title.healthdata";
+			fwdPage = "load/health_diabetes_management.jsp";
 		}
 
 		requestScope("showErrBox ", _isFormValid);
