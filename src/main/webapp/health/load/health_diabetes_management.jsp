@@ -26,7 +26,7 @@
 				Apple Android integration, Digial services, Primarycare Physician, Hospitals 
 				" />
 				<meta name="Description" content="" />
-				<title>sevhā Health Management</title> <script language=javascript
+				<title>${applicationScope.serverName} Health Management</title> <script language=javascript
 					type='text/javascript'>
 					var uagent = navigator.userAgent.toLowerCase();
 					//alert("Dimensions of document: " + $(document).width() + "x" + $(document).height());
@@ -106,7 +106,7 @@
 			name='timezoneoffset' type='hidden' value='0' />
 		<div id="headerSection" style="z-index: 999">
 			<div>
-				<span class='newlogo'>sevhā</span>
+				<span class='newlogo'>${applicationScope.serverName}</span>
 			</div>
 			<div id="banner">
 				<span style="padding-right: 2%"><i class="fa fa-home"
@@ -166,8 +166,8 @@
 				<br></br>
 				<div class="bnnr__hdln_3_a" style="margin-left: 5%; width: 80%">
 					<span>sevhā provides a simple platform for managing
-						diabetes for children and adult by connecting your family or
-						professional CareGiver.</span>
+						diabetes for children and adults by connecting you, your family and 
+						family physician</span>
 				</div>
 
 			</div>

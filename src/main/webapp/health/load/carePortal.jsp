@@ -7,7 +7,7 @@
 			${f:text("key")} />
 		<div class='logo'>
 			<span><a href="\"
-				style="color: #FFFFFF; visited: #FFFFFF; text-decoration: none;">sevhā</a></span>
+				style="color: #FFFFFF; visited: #FFFFFF; text-decoration: none;">${applicationScope.serverName}</a></span>
 		</div>
 		<div id="main" style="margin: 0% 0% 0% 0%;">
 			<div>

@@ -115,7 +115,7 @@
 	font-family: 'Prata', serif;
 	position: relative;
 	left: 0%;
-	padding: 0.0em 0.0em 0.0em 0.5em;
+	padding: 0.0em 0.0em 0.0em 0.0em;
 	width: auto;
 	font-size: 3.0em;
 	font-weight: normal;
@@ -451,9 +451,9 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	left: 10%;
 	padding: 0.0em 0.0em 0.0em 0.5em;
 	width: auto;
-	font-size: 3em;
+	font-size: 3.5em;
 	font-weight: normal;
-	color: #FFFFFF;
+	color: #ACC875;
 	background-color: transparent;
 	width: 100%;
 }
@@ -478,7 +478,7 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	left: 0%;
 	border-style: none;
 	height: 3.75em;
-	background-color: #ACC875;
+	--background-color: #ACC875;
 }
 
 #portalHeader {
@@ -611,7 +611,7 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 
 .bnnr__hdln {
 	position: relative;
-	color: #212b31;
+	color: #FFFFFF;
 	font-family: 'Roboto', Arial;
 	font-weight: bold;
 	font-size: 1.8em;
@@ -619,8 +619,8 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	border-color: #CCCCCC;
 	border-style: none;
 	margin-top: 10%;
-	margin-left: 60%;
-	width: 40%;
+	margin-left: 10%;
+	width: 80%;
 	height: auto;
 	text-align: left;
 	padding: 2% 2% 2% 4%;
@@ -729,7 +729,7 @@ input[type="submit"], input[type="button"], input[type="reset"]:hover {
 	left: 10%;
 	width: 90%;
 	height: auto;
-	font-size: 2em;
+	font-size: 3.5em;
 	text-align: center;
 	padding: 1% 1% 1%;
 	color: #FFFFFF;

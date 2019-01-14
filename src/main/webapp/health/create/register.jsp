@@ -7,7 +7,7 @@
 		<input name='selectedPreCondition' type='hidden' />
 		<div id="main">
 			<div class='logo'>
-				<span>sevhā</span>
+				<span>${applicationScope.serverName}</span>
 			</div>
 			<div class='logout'>
 				<span> <a href="javascript:submitForm('APPLN')">Cancel</a>

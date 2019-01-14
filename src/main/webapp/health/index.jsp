@@ -23,11 +23,21 @@
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 				<meta name="Keywords"
 					content="Healthcare,Technology,Health Insurance,Longterm care
-				Apple Android integration, Digial services, Primarycare Physician, Hospitals 
+				Apple Android integration, Digital services, Primarycare Physician, Hospitals, cheap health insurance usa,
+				affordable individual health insurance,long term care insurance, want to buy health insurance,
+				purchase healthcare insurance, best affordable health insurance plans, can i buy health insurance online,
+				shop medical insurance plans,how to get health insurance quotes,primary care physician number,
+				cheap and good health insurance, need to get health insurance, primary care physician chicago,
+				insurance quotes for health insurance, life long term care, primary care physician job duties, how to care for aging parents,
+				diabetes glucometer, blood pressure watch, apple health, homecare america, blood glucose meter, diabetes monitor,
+				high blood pressure monitor, caretaker usa, caregiver services florida, blood sugar test, herbal treatment for diabetes,
+				blood pressure checker,diabetic cooking, senior care living, supplements for high blood pressure, harvard healthcare management,
+				human resources phr certification, senior home assistance, help homecare, find a caregiver, home health aide agencies,
+				affordable home care, parkinsons home care, senior care advice, 
 				" />
 				<meta name="Description" content="" />
-				<title>Welcome to sevhā</title> <script language=javascript
-					type='text/javascript'>
+				<title>Welcome to ${applicationScope.serverName}</title> <script
+					language=javascript type='text/javascript'>
 					var uagent = navigator.userAgent.toLowerCase();
 					//alert("Dimensions of document: " + $(document).width() + "x" + $(document).height());
 					//alert("Dimensions of window: " + $(window).width() + "x"
@@ -106,7 +116,8 @@
 			name='timezoneoffset' type='hidden' value='0' />
 		<div id="headerSection" style="z-index: 999">
 			<div>
-				<span class='newlogo'>sevhā</span>
+				<!--  <span class='newlogo'>sevhā</span> -->
+				<span class='newlogo'>${applicationScope.serverName}</span>
 			</div>
 			<div id="banner">
 				<span style="padding-right: 2%"><i class="fa fa-home"
@@ -141,36 +152,15 @@
 		<div id="content" class="content" style="z-index: -1">
 			<div id="block-1"
 				style="border-radius: 0px 0px 10px 10px; border-top: none;">
-				<div class="imgbkgrd-1">
-					<div class="bnnr__hdln">Life is Busy. Families are spread
-						across cities. Managing family health cost is a challenge.</div>
+				<!--  <div class="imgbkgrd-1"> -->
+				<div
+					style="background-color: #485157; border-radius: 10px 10px 10px 10px;">
+					<div class="bnnr__hdln">Life is Busy.<br>Right now millions are
+						doing truly selfless work by serving as family caregivers for a
+						loved one.</div>
 				</div>
 			</div>
-			<br></br>
-			<div id="block-1A"
-				style="border-radius: 0px 0px 10px 10px; border-top: none;">
-				<div class="imgbkgrd-1A">
-					<div class="bnnr__hdln_1A" style="margin-top: 0%">November 14
-						is Diabetes Day</div>
-					<div class="bnnr__hdln_1A_sub">
-						<ul
-							style="padding-left: 10px; list-style-position: outside; list-style-type: square;">
-							<li style="padding: 2px">415 million adults have diabetes (1
-								in 11 adults)</li>
-							<li style="padding: 2px">46.5% of those with diabetes have
-								not been diagnosed</li>
-							<li style="padding: 2px">12% of global health expenditure is
-								spent on diabetes ($673 billion)</li>
-							<li
-								style="background-color: yellow; padding: 2px; border-radius: 5px; text-align: center;">
-								<a href="/health/register?actionParam=HEALTHDATA">How sevha manages adult and juvelie diabetes?</a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-			<br></br>
+						<br></br>
 			<div
 				style="position: relative; height: 10px; background: transparent;"></div>
 			<div id="block-2" style="position: relative">
@@ -178,13 +168,11 @@
 					<div class="bnnr__hdln_1" style="position: relative;">
 						<span> Every family have elderly. Managing health in old
 							age is difficult and costly. </span> <br></br> <span> Few have
-							suffered brain stroke, and old age disorder like Parkinson's,
+							suffered brain stroke, and old age disorders like Parkinson's,
 							Dementia and Alzheimer's disease. Many of us are having long term
 							disorders like Hypertension, Diabetes, Cardiovascular diseases
-							and depression and that too at young. </span> <br></br> <span>
-							Most of these disorders lead to complex situation for not able to
-							comply with medication routine. Do not follow body symptoms and
-							seek primary care in time. This leads to a medical emergency. </span>
+							and depression. </span> <br></br> <span>
+							Low medication compliance,ignored body symptoms, and delay in seeking primary care leads to an emergency.</span>
 					</div>
 				</div>
 			</div>
@@ -216,6 +204,31 @@
 					</div>
 				</div>
 			</div>
+			<br></br>
+			<div id="block-1A"
+				style="border-radius: 0px 0px 10px 10px; border-top: none;">
+				<div class="imgbkgrd-1A">
+					<div class="bnnr__hdln_1A" style="margin-top: 0%"></div>
+					<div class="bnnr__hdln_1A_sub">
+						<ul
+							style="padding-left: 10px; list-style-position: outside; list-style-type: square;">
+							<li style="padding: 2px">415 million adults have diabetes (1
+								in 11 adults)</li>
+							<li style="padding: 2px">46.5% of those with diabetes have
+								not been diagnosed</li>
+							<li style="padding: 2px">12% of global health expenditure is
+								spent on diabetes ($673 billion)</li>
+							<li
+								style="background-color: yellow; padding: 2px; border-radius: 5px; text-align: center;">
+								<a href="/health/register?actionParam=HEALTHDATA">How sevhā
+									manages adult and juvelie diabetes?</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			
 			<div
 				style="position: relative; height: 10px; background: transparent;"></div>
 			<div
@@ -225,10 +238,10 @@
 				<div class="imgbkgrd-4">
 					<div class="bnnr__hdln_2">
 						<span
-							style="font-family: 'Prata', serif; font-size: 4em; color: #FFFFFF;">sevhā</span>
+							style="width: 80%; margin-left:5%; margin-right: 5%; font-family: 'Prata', serif;color: #FFFFFF;">${applicationScope.serverName}</span>
 					</div>
 					<div class="bnnr__hdln_2"
-						style="width: 80%; margin-left: 10%; margin-right: 10%">Track
+						style="font-size: 2em;width: 80%; margin-left: 10%; margin-right: 10%">Track
 						Symptoms. RxCompliance. Health Alerts.</div>
 				</div>
 			</div>
